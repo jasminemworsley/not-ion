@@ -1,11 +1,14 @@
 import React from 'react';
 
+function Welcome(props: { name: React.ReactNode; }) {
+    return <h1>Hello, {props.name}</h1>;
+}
+
 function App() {
   return (
       <div>
-          <h1>
-              Hello React
-        </h1>
+          <Welcome name="Conor" />
+          <Welcome name="Jasmine" />
       </div>
   );
 }
